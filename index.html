@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>My Shopping Bag</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no" />
+   <style>
+       
+      </style>
+   <meta name="description" content="">
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <link rel="stylesheet" href="css/style.css" type="text/css"> 
+   <!-- Le fav and touch icons  -->
+   <script type="text/javascript" src="js/ajax.service.method.js"></script>
+   <script type="text/javascript" src="js/ajax.service.js"></script>
+   <script type="text/javascript" src="js/ajax.servicecontoller.js"></script>
+   <script type="text/javascript" src="js/ajax.service.definition.js"></script>
+   <script type="text/javascript" src="js/log.js"></script>
+   
+   <script type="text/javascript" src="js/main.js" async></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="header_title">Eclectees</div>
+		</nav>
+		<div  class="header">
+         <div class="sortItems">
+            <select name="sortList" id="sortList">
+               <option value="high">Price High - Low </option>
+               <option value="low">Price Low - High</option>
+               <option value="A-Z">Title - A-Z</option>
+               <option value="Z-A">Title - Z-A</option>
+            </select>
+       </div>
+      
+	</header>
+	
+	<section>
+
+	   <div class="main_container" >
+         <div class="item_containers">
+         </div>
+         <div class="cart_containers">
+         
+            <div class="cartHeader">
+               <h2 class="section-header">CART</h2> <span class="product_count"></span> 
+            </div>
+               <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">ITEM</span>
+                  <span class="cart-price cart-header cart-column">PRICE</span>
+                  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              </div>
+              <div class="cart-items">
+                  <div class="no_items">Cart is empty</div>
+              </div>
+            <div class="cart-total">
+               <strong class="cart-total-title">Total</strong>
+               <span class="cart-total-price">£0</span>
+           </div>
+         </div>
+      </div>
+	</section>
+
+
+	<footer>
+		<p>@Eclectees Co Ltd. 2018</p>
+	</footer>
+   <div id="domData" style="display:none;"></div>
+   <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+         <span class="close">×</span>
+            <div class="viewDetailContainer">
+            <div class="product_dtl_left">
+               <img class="product_img"  alt="cart image">
+            </div> 
+            <div class="product_dtl_right">
+               <span class="product_name "></span>
+               <span class="product_price "></span>
+               <div class="product_bodyHtml "></div>
+              
+               <p class="add-btn-container "><button class="addtoBag-btn">Close</button></p>
+            </div>  
+            </div>
+      </div>
+   </div>
+</body>
+
+</html>
