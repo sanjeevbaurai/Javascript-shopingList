@@ -10,14 +10,14 @@ var ajaxServiceDefinitions = [
 		
 	 */
 	{
-		name: "cart",
+		name: "products",
 		
-		url:"https://www.rawnet.com/application/files/5215/8021/3438/",
+		url:"js/",//"https://www.rawnet.com/application/files/5215/8021/3438/",
 		methods: [
 						
 			// for cart service
 			{
-					name: "products",
+					name: "cart",
 					args: ["string", "number", "object"],
 					ajaxParam: {
 						async: true,

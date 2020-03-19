@@ -11,13 +11,12 @@
 	        this.registerUIEvents();
 	        let body = document.getElementsByTagName('body')[0];
 	        body.style.cursor='wait';
-	        //$('body').css('cursor', 'wait');
 	        this.available_options;
 	        this.productinCartLocal;
 	        this.getCurrency = "";
 	        this.objItemIndex;
 	        AjaxServiceController.load(ajaxServiceDefinitions);
-	        AjaxServiceController.cart.products.run(this, this.onProductsJSONSuccess, this.onProductsJSONError, {
+	        AjaxServiceController.products.cart.run(this, this.onProductsJSONSuccess, this.onProductsJSONError, {
 	            callback: 'callbackFN'
 	        });
 
@@ -28,7 +27,6 @@
 	    };
 
 	    this.onProductsJSONSuccess = function(data, textStatus, jqXHR) {
-	        //this.setDataInCookie();
 	        this.populateProductsDetails(data);
 	        let body = document.getElementsByTagName('body')[0];
 	        body.style.cursor='default';
@@ -38,7 +36,6 @@
 	    this.registerUIEvents = function() {
 			var obj = this;
 	        // When the user clicks on <span> (x), close the modal
-	        
 			let modal = document.getElementById("myModal");
 	        let close= document.getElementsByClassName("close")[0]
 	        close.onclick = function() {
